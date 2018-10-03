@@ -1,9 +1,8 @@
-package com.example.ferdi.penjualanamt
+package com.example.ferdi.penjualanamt.controller
 
 import android.os.Bundle
 import android.app.Activity
-
-import kotlinx.android.synthetic.main.activity_register.*
+import com.example.ferdi.penjualanamt.R
 
 class register : Activity() {
 

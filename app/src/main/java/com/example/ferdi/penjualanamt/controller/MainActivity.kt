@@ -1,14 +1,14 @@
-package com.example.ferdi.penjualanamt
+package com.example.ferdi.penjualanamt.controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.ferdi.penjualanamt.R.layout.activity_register
-import com.example.ferdi.penjualanamt.R.layout.activity_home
+import com.example.ferdi.penjualanamt.R
 
 
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

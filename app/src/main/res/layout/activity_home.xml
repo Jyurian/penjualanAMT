@@ -4,38 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home"
+    tools:context=".controller.home"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
-            <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
-            android:id="@+id/toolbar"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:elevation="4dp"
-            />
-
-            <FrameLayout
-                android:id="@+id/fragment_container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <android.support.design.widget.NavigationView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/nav_view"
-                app:headerLayout="@layout/nav_header"
-                app:menu="@menu/drawer_menu"
-                android:layout_gravity="start"/>
-        </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

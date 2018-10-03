@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".controller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +17,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".register"
+            android:name=".controller.register"
             android:label="@string/title_activity_register" />
         <activity
-            android:name=".home"
+            android:name=".controller.home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".drawer_navi"
+            android:name=".controller.drawer_navi"
             android:label="@string/title_activity_drawer_navi"
             android:theme="@style/AppTheme"></activity>
     </application>
