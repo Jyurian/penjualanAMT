@@ -4,7 +4,7 @@ import com.example.ferdi.penjualanamt.model.TipeMobil
 
 object DataServices {
 
-    val tipe = listOf(
-            TipeMobil()
-    )
+//    val tipe = listOf(
+//            TipeMobil()
+//    )
 }
