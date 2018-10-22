@@ -2,16 +2,17 @@ package com.example.ferdi.penjualanamt.controller
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.ferdi.penjualanamt.R
 
-class home : AppCompatActivity()  {
+class HomeActivity : AppCompatActivity()  {
 
 //    private val mDrawerLayout?: DrawerLayout
 //    private val mToggle? : ActionBarDrawerToggle
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_home)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
 //
 //        mToggle = ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close)
 //

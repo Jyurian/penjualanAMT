@@ -11,7 +11,7 @@ import com.example.ferdi.penjualanamt.R
 import kotlinx.android.synthetic.main.activity_drawer_navi.*
 import kotlinx.android.synthetic.main.app_bar_drawer_navi.*
 
-class drawer_navi : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class DrawerNaviActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,13 +38,6 @@ class drawer_navi : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             super.onBackPressed()
         }
     }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.drawer_navi, menu)
-        return true
-    }
-
 
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

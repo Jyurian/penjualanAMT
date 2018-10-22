@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ferdi.penjualanamt">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,16 +20,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".controller.register"
+            android:name=".controller.RegisterActivity"
             android:label="@string/title_activity_register" />
         <activity
-            android:name=".controller.home"
+            android:name=".controller.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".controller.drawer_navi"
+            android:name=".controller.DrawerNaviActivity"
             android:label="@string/title_activity_drawer_navi"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".controller.DaftarBarangActivity"></activity>
     </application>
 
 </manifest>
