@@ -1,17 +1,12 @@
-package com.example.ferdi.penjualanamt.controller
+package com.example.ferdi.penjualanamt.Controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.Volley
+
 import com.example.ferdi.penjualanamt.R
 import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONObject
 
 
 class MainActivity : AppCompatActivity() {
@@ -49,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         var username : String = emailLoginET.text.toString()
         var password : String = pwdLoginET.text.toString()
-        val i = Intent(this, DaftarBarangActivity::class.java)
+        val i = Intent(this, HomeActivity::class.java)
         startActivity(i)
     }
 

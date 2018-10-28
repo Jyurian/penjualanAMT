@@ -1,17 +1,16 @@
-package com.example.ferdi.penjualanamt.controller
+package com.example.ferdi.penjualanamt.Controller
 
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-import android.view.Menu
 import android.view.MenuItem
 import com.example.ferdi.penjualanamt.R
 import kotlinx.android.synthetic.main.activity_drawer_navi.*
 import kotlinx.android.synthetic.main.app_bar_drawer_navi.*
 
-class DrawerNaviActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class DrawerNaviActivity: AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +38,7 @@ class DrawerNaviActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         }
     }
 
-
+    
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {

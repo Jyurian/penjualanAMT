@@ -1,4 +1,4 @@
-package com.example.ferdi.penjualanamt.controller
+package com.example.ferdi.penjualanamt.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

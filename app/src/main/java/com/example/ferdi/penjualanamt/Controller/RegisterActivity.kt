@@ -1,4 +1,4 @@
-package com.example.ferdi.penjualanamt.controller
+package com.example.ferdi.penjualanamt.Controller
 
 import android.os.Bundle
 import android.app.Activity
@@ -6,7 +6,6 @@ import android.util.Log
 import android.view.View
 import com.example.ferdi.penjualanamt.R
 import com.example.ferdi.penjualanamt.Services.AuthService
-import kotlinx.android.synthetic.main.activity_register.*
 
 
 class RegisterActivity : Activity() {
