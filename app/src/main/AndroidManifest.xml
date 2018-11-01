@@ -9,6 +9,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -31,7 +32,9 @@
             android:label="@string/title_activity_drawer_navi"
             android:theme="@style/AppTheme" />
         <activity android:name=".Controller.ProductActivity" />
-        <activity android:name=".Controller.ProductActivity"></activity>
+        <activity android:name=".Controller.ProductDetailActivity" />
+        <activity android:name=".Controller.cartActivity" />
+
     </application>
 
 </manifest>

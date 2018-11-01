@@ -3,8 +3,10 @@ package com.example.ferdi.penjualanamt.Controller
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
+import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
 import android.view.MenuItem
 import com.example.ferdi.penjualanamt.R
 import kotlinx.android.synthetic.main.activity_drawer_navi.*
@@ -16,12 +18,13 @@ class DrawerNaviActivity: AppCompatActivity(), NavigationView.OnNavigationItemSe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer_navi)
         setSupportActionBar(toolbar)
-
+//
 //        fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                    .setAction("Action", null).show()
 //        }
 
+        val drawer : DrawerLayout = findViewById(R.id.drawer_layout)
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
@@ -36,6 +39,12 @@ class DrawerNaviActivity: AppCompatActivity(), NavigationView.OnNavigationItemSe
         } else {
             super.onBackPressed()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.drawer_menu, menu)
+        return true
     }
 
     
